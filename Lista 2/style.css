@@ -1,0 +1,83 @@
+body *{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+#first-section #first-box {
+    box-sizing: border-box;
+    color: white;
+    height: 150px;
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #00FF0F;
+}
+
+#first-section #second-box {
+    box-sizing: border-box;
+    color: white;
+    height: 150px;
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    border-color: blue;
+    border-width: 10px;
+    border-style: dashed;
+}
+
+#first-section #third-box {
+    box-sizing: border-box;
+    color: white;
+    height: 150px;
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #00FF0F;
+}
+
+#second-section .animal-list > ::marker {
+    color: red;
+}
+
+#second-section .animal-list li:first-child ol li::marker {
+    color: green;
+}
+
+#second-section .animal-list li:nth-child(2) ul li::marker {
+    color: blue;
+}
+
+#second-section .animal-list li :first-child {
+    color: turquoise;
+}
+
+#third-section p a.link {
+    color: #437bc4;
+    text-decoration: none;
+}
+
+#third-section p a.link:visited {
+    color: violet;
+}
+
+#third-section p a.link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#third-section p a.link::before {
+    content: "🔗";
+    text-decoration: none;  
+    display: inline-block;
+}
+
+#forth-section .image {
+    height: auto;
+    width: 100vw;
+    min-width: 400px;
+    max-width: 1000px;
+}
