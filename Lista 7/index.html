@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>TODO List</title>
+</head>
+
+<body>
+    <section class="form__wrapper">
+        <h2 class="form__header"> Hello! </h2>
+
+        <form class="form" id="form">
+
+            <h3>What do you want TODO?</h3>
+            <label class="input__label">
+                <input aria-label="addTodo" name="input" class="input__input" id="input__input" />
+                <button class="add__button">Add!</button>
+            </label>
+        </form>
+    </section>
+
+    <section class="list__wrapper" id="list__wrapper">
+        <h2 class="list__header"> TODO List </h2>
+        <p class="remainings" id="remainings">(0 remainings)</p>
+        <button class="clear__all__button" id="clear_all" onclick="clearAll()">Clear all!</button>
+        <ul class="list" id="list"> </ul>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,169 @@
+html {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBF5F5;
+    font-family: Roboto, Arial;
+}
+
+.main_header {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.main_header__header {
+    font-size: 2.5rem;
+}
+
+h2 {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.figure__caption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer__wrapper {
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    text-align: center;
+    border-top: solid 1px;
+    border-color: black;
+}
+
+.footer {
+    align-self: center;
+    font-size: 0.7rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content__main {
+    display: flex;
+    flex-direction: column;
+    background-color: #ECECF7;
+    padding: 2rem;
+}
+
+.navigation__wrapper {
+    display: flex;
+}
+
+.navigation {
+    flex-direction: column;
+    padding-inline-start: 0px;
+    top: 0;
+    align-self: flex-start;
+    position: sticky;
+}
+
+.navigation__item {
+    list-style-type: none;
+}
+
+.navigation__link { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    padding-inline: 2rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.navigation__link:hover { 
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.article__figure {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+.figure--right {
+    float: right;
+}
+
+.figure--left {
+    float: left;
+}
+
+.article {
+    clear: both;
+}
+
+.warning {
+    flex-grow: 0.7;
+    min-width: 500px;
+    background-color: #F4C5B7;
+    border-style: solid;
+    border-color: #FAF9F8;
+    border: 3px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.warning__header {
+    text-align: center;
+}
+
+.warning__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.warning__figure {
+    margin: 2rem;
+    margin-block-start: 0;
+}
+
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gallery__image {
+    object-fit: cover;  
+    height: 100%;
+    width: 100%;
+}
+
+.gallery__first_item {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.gallery__second_item {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gallery__third_item {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.gallery__forth_item {
+    grid-column: 3;
+    grid-row: 1;
+}

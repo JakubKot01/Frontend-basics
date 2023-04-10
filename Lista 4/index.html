@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Blog</title>
+</head>
+
+<body>
+    <section class="form__wrapper">
+
+        <h1 class="form__header">Contact us!</h1>
+
+        <form class="form">
+
+            <div class="form__box name__box">
+                <label class="form__item name" for="name">Name (Required):</label>
+                <input type="text" id="name" name="name" class="name input" required minlength="3" />
+            </div>
+
+            <div class="form__box surname__box">
+                <label class="form__item surname" for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" class="surname input" minlength="3" />
+            </div>
+
+            <div class="form__box email__box">
+                <label class="form__item email" for="email">Email (Required):</label>
+                <input type="email" id="email" name="email" class="email input" required pattern=".+\@.+\..+" />
+            </div>
+
+            <div class="form__box phone__box">
+                <label class="form__item phone" for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" class="phone input" pattern="[0-9]{9}"
+                    placeholder="123456789" />
+            </div>
+
+            <div class="form__box reason__box">
+                <label class="form__item reason" for="reason">Reason (Required):</label>
+                <select required class="input reason__input">
+                    <option value="" disabled selected hidden>-- select an option --</option>
+                    <option value="First reason">First reason</option>
+                    <option value="Second reason">Second reason</option>
+                    <option value="Third reason">Third reason</option>
+                </select>
+            </div>
+
+            <div class="form__box message__box">
+                <label class="form__item message" for="message">Message (Required):</label>
+                <textarea id="message" name="message" class="message__input input"></textarea>
+            </div>
+
+            <div class="form__box newsletter__box">
+                <label class="form__item newsletter" for="newsletter">Subscribe the newsletter</label>
+                <input type="checkbox" id="newsletter" class="newsletter__input input checkbox" name="newsletter">
+            </div>
+
+            <div class="form__box submit__box">
+                <button type="submit" class="submit__button">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
